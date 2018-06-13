@@ -14,7 +14,7 @@
 
 </head>
 <body>
-    
+    <container>
     <div class="jumbotron jumbotron-fluid" id="appHeader">
         <div class="container" id="headerContents">
             <h1 class="display-4" id="appName">[Railtime]</h1>
@@ -36,34 +36,7 @@
               </tr>
             </thead>
             <tbody id="schedule">
-              <tr>
-                <td>Placeholder</td>
-                <td>Placeholder2</td>
-                <td>Placeholder3</td>
-                <td>Placeholder4</td>
-                <td>Placeholder5</td>
-              </tr>
-              <tr>
-                <td>Placeholder</td>
-                <td>Placeholder2</td>
-                <td>Placeholder3</td>
-                <td>Placeholder4</td>
-                <td>Placeholder5</td>
-              </tr>
-              <tr>
-                <td>Placeholder</td>
-                <td>Placeholder2</td>
-                <td>Placeholder3</td>
-                <td>Placeholder4</td>
-                <td>Placeholder5</td>
-              </tr>
-              <tr>
-                <td>Placeholder</td>
-                <td>Placeholder2</td>
-                <td>Placeholder3</td>
-                <td>Placeholder4</td>
-                <td>Placeholder5</td>
-              </tr>
+
             </tbody>
             </table>
     </div>
@@ -81,20 +54,26 @@
             </div>
             <div class="form-group">
               <label><b>First Train Time (HH:mm - military time)</b></label>
-              <input type="text" class="form-control" id="trainTime">
+              <input type="time" class="form-control" id="trainTime">
             </div>
             <div class="form-group">
               <label><b>Frequency (min)</b></label>
-              <input type="text" class="form-control" id="trainFreq">
+              <input type="number" class="form-control" id="trainFreq">
             </div>
-            <button type="submit" class="btn">Submit</button>
+            <button type="submit" class="btn" id="submitBtn">Submit</button>
         </form>
-
 
     </div>
 
+    <div class="row" id="footer">
+        <div class="col-12">
+          <p id="backToTop">Back to top</p>
+        </div>
+    </div>
+    </container>
 
 
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
 
     <script type="text/javascript" src="assets/javascript/main.js"></script>
     

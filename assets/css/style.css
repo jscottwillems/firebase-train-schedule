@@ -1,6 +1,6 @@
 body {
     background: url(../images/background.jpg);
-    background-size: cover;
+
     font-family: 'ultra';
     font-size: 22px;
 }
@@ -63,7 +63,7 @@ body {
     padding: 10px 20px 10px 20px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     opacity: .95;
     box-shadow: 4px 4px rgba(0, 0, 0, 0.342);
 }
@@ -80,6 +80,26 @@ button {
     font-weight: bolder;
     color: whitesmoke;
 }
+
+#footer {
+    text-align: center;
+    position: relative;
+    margin-top: 30px;
+    bottom:0;
+    width:100vw;
+    height:150px;
+    background: black;
+}
+
+#backToTop {
+    color: aliceblue;
+    margin-top: 30px;
+}
+
+#backToTop:hover {
+    color: rgb(173, 179, 179);
+}
+
 
 
 @font-face {
