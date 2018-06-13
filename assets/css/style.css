@@ -1,10 +1,46 @@
 body {
-
+    background: url(../images/background.jpg);
+    background-size: cover;
+    font-family: 'ultra';
+    font-size: 22px;
 }
 
 #appHeader {
     margin-bottom: 30px;
     text-align: center;
+    background: #974b3f;
+    opacity: .9;
+}
+
+#headerContents {
+    margin-bottom: -70px;
+}
+
+#appName {
+    font-family: 'railway';
+    font-size: 64px;
+    color: black;
+    text-shadow: 2px 2px rgba(170, 169, 169, 0.521);
+    margin-top: 15px;
+}
+
+.lead {
+    font-weight: bold;
+    font-size: 32px;
+    color: black;
+    text-shadow: 1px 1px rgba(175, 175, 175, 0.521);
+}
+
+#rail {
+    color: rgb(190, 192, 99);
+}
+
+#trainImg {
+    width: 375px;
+    margin-top: -200px;
+    margin-left: -780px;
+    -webkit-filter: drop-shadow(8px 8px 8px #222);
+    filter: drop-shadow(8px 8px 8px #222);
 }
 
 #scheduleCard {
@@ -12,10 +48,15 @@ body {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
+    opacity: .95;
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.342);
 }
 
-#scheduleHeader{
+#scheduleHeader, #addHeader{
     margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
 }
 
 #formCard {
@@ -23,8 +64,29 @@ body {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
+    opacity: .95;
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.342);
 }
 
-#addHeader {
-    margin-bottom: 10px;
+input {
+    font-weight: bolder;
+    font-size: 22px !important;
+}
+
+button {
+    background: #974b3f;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.342);
+    font-size: 22px !important;
+    font-weight: bolder;
+    color: whitesmoke;
+}
+
+@font-face {
+	font-family: 'railway';
+	src: url(./railway.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: 'ultra';
+	src: url(./ultra.ttf) format('truetype');
 }

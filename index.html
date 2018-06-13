@@ -16,9 +16,10 @@
 <body>
     
     <div class="jumbotron jumbotron-fluid" id="appHeader">
-        <div class="container">
-            <h1 class="display-4">Railtime</h1>
-            <p class="lead">Plan your trip with <i>rail</i>time updates!</p>
+        <div class="container" id="headerContents">
+            <h1 class="display-4" id="appName">[Railtime]</h1>
+            <p class="lead">Plan your trip with <i id="rail">rail</i>time updates!</p>
+            <img src="assets/images/train.png" alt="train" id="trainImg">
         </div>
     </div>
 
@@ -52,22 +53,22 @@
         <div class="card-header" id="addHeader">Add Train</div>
         <form>
             <div class="form-group">
-              <label>Train Name</label>
-              <input type="text" class="form-control form-control-sm" id="trainName">
+              <label><b>Train Name</b></label>
+              <input type="text" class="form-control" id="trainName">
             </div>
             <div class="form-group">
-              <label>Destination</label>
-              <input type="text" class="form-control form-control-sm" id="destination">
+              <label><b>Destination</b></label>
+              <input type="text" class="form-control" id="destination">
             </div>
             <div class="form-group">
-              <label>First Train Time (HH:mm - military time)</label>
-              <input type="text" class="form-control form-control-sm" id="trainName">
+              <label><b>First Train Time (HH:mm - military time)</b></label>
+              <input type="text" class="form-control" id="trainTime">
             </div>
             <div class="form-group">
-              <label>Frequency (min)</label>
-              <input type="text" class="form-control form-control-sm" id="trainName">
+              <label><b>Frequency (min)</b></label>
+              <input type="text" class="form-control" id="trainFreq">
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn">Submit</button>
         </form>
 
 
