@@ -1,5 +1,8 @@
 $(document).ready(function() {
 
+    // add remove button feature
+    // add auto refresh feature
+
     var config = {
         apiKey: "AIzaSyBsZbpqIkUvURSKGWiukwE7HemufIVurN0",
         authDomain: "train-schedule-e2835.firebaseapp.com",
@@ -22,6 +25,7 @@ $(document).ready(function() {
         var trainFreq = $('#trainFreq').val().trim();
         
         var trainUpdate = {
+            
             name: trainName,
             place: destination,
             firstTrain: firstTrain,
@@ -29,6 +33,7 @@ $(document).ready(function() {
         }
         
         database.ref().push(trainUpdate);
+        
         
         $('form')[0].reset();
         
@@ -62,6 +67,7 @@ $(document).ready(function() {
         var nextTrainFormated = moment(nextTrain).format("HH:mm");
         
         var newTrain = "<tr><td>" + trainName + "</td><td>" + destination + "</td><td>" + trainFreq + "</td><td>" + nextTrainFormated + "</td><td>" + minsTillTrain  + "</td></tr>";
+
         $("table tbody").append(newTrain);
         
     });
